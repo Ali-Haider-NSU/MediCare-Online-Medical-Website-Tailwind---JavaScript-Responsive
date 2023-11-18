@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+      "*.css": "tailwindcss"
+    },
+    "editor.formatOnSave": false,
+    "css.format.enable": false,
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "editor.formatOnType": true,
+    "prettier.embeddedLanguageFormatting": "auto",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.bracketPairColorization.enabled": true,
+    
+  }

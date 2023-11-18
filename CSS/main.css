@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Link Hover Color */
+
+.link-hover{
+    @apply hover:text-blue transition;
+}
+
+.prt{
+    padding-right: 20%;
+}

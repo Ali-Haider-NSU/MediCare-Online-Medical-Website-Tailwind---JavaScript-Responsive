@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="https://kit.fontawesome.com/ea4016ff0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="py-5 border-b border-gray md:flex justify-around items-center">
+            <ul class="flex justify-center gap-5 lg:gap-10">
+                <li>
+                    <a class="link-hover" href="#">About</a>
+                </li>
+                <li>
+                    <a class="link-hover" href="#">Doctors</a>
+                </li>
+                <li>
+                    <a class="link-hover" href="#">Contact</a>
+                </li>
+                <li>
+                    <a class="link-hover" href="#">FAQ</a>
+                </li>
+            </ul>
+            <div class="flex justify-center items-center gap-10 mt-2 md:mt-0 ">
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-phone text-blue"></i>
+                    <p>+880 1234 56789</p>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-envelope text-blue"></i>
+                    <p class="link-hover cursor-pointer">email@domain.com</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="mx-5 md:mx-10 lg:mx-5 xl:mx-10 mt-5 flex justify-between">
+
+            <div class="lg:flex justify-between  items-center lg:w-[75%]">
+                <!-- Left Logo -->
+
+                <div>
+                    <img src="img/logo.png" alt="">
+                </div>
+
+                <!-- Main Navigation Link -->
+
+                <div class="hidden lg:block">
+                    <ul class="leading-8 mx-3 text-violet lg:flex gap-5 xl:gap-10">
+                        <li>
+                            <a class="link-hover" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="link-hover" href="#">Doctors</a>
+                        </li>
+                        <li>
+                            <a class="link-hover" href="#">Services</a>
+                        </li>
+                        <li class="cursor-pointer link-hover">
+                            <a class="" href="#">Pages</a>
+                            <span><i class="fa-solid fa-angle-down pl-1"></i></span>
+                            <span class="hidden"><i class="fa-solid fa-angle-up pl-1"></i></span>
+                            <ul class="text-violet ml-5 hidden">
+                                <li><a class="link-hover" href="#">Page - 1</a></li>
+                                <li><a class="link-hover" href="#">Page - 2</a></li>
+                                <li><a class="link-hover" href="#">Page - 3</a></li>
+                                <li><a class="link-hover" href="#">Page - 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="link-hover">
+                            <a href="#">Blogs</a>
+                            <span><i class="fa-solid fa-angle-down pl-1"></i></span>
+                            <span class="hidden"><i class="fa-solid fa-angle-up pl-1"></i></span>
+                            <ul class="text-violet ml-5 hidden">
+                                <li><a class="link-hover" href="#">Blog - 1</a></li>
+                                <li><a class="link-hover" href="#">Blog - 2</a></li>
+                                <li><a class="link-hover" href="#">Blog - 3</a></li>
+                                <li><a class="link-hover" href="#">Blog - 4</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a class="link-hover" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Right Side Hamburger And Button-->
+
+            <div class="">
+                <div class="lg:hidden">
+                    <div class="block">
+                        <i class="fa-solid fa-bars text-blue text-3xl font-bold"></i>
+                    </div>
+                    <div class="hidden">
+                        <i class="fa-solid fa-xmark text-blue text-3xl font-bold"></i>
+                    </div>
+                </div>
+                <div class="w-44 h-12  flex justify-center items-center text-white font-bold hidden lg:block">
+                    <button class="bg-blue w-full h-full hidden lg:block rounded-md">Book Appointment</button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
