@@ -8,6 +8,54 @@
     @apply hover:text-blue transition;
 }
 
-.prt{
-    padding-right: 20%;
+/* For underline bottom of the link */
+
+@media screen and (min-width:992px){
+  .for-underline li{
+    position: relative;
 }
+
+.for-underline li:after{
+    content: "";
+    position: absolute;
+    background-color: #1A76D1;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: .5s;
+}
+
+.for-underline li:hover:after{
+    width: 100%;
+}
+}
+
+
+/* For Hover Button */
+
+.hover-btn {
+    position: relative;   
+    padding: 10px;
+    overflow: hidden;
+    transition: color 0.5s ease;
+  }
+
+  .hover-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background-color: #2C2D3F; 
+    transition: width 0.5s ease;
+  }
+
+  .hover-btn:hover::before {
+    width: 100%;
+  }
+
+
+ 

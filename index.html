@@ -38,9 +38,9 @@
             </div>
         </div>
 
-        <nav class="mx-5 md:mx-10 lg:mx-5 xl:mx-10 mt-5 flex justify-between">
+        <nav class="mx-5 md:mx-10 lg:mx-5 xl:mx-10 mt-5 flex justify-between ">
 
-            <div class="lg:flex justify-between  items-center lg:w-[75%]">
+            <div class="lg:flex justify-between  lg:w-[75%]">
                 <!-- Left Logo -->
 
                 <div>
@@ -49,33 +49,33 @@
 
                 <!-- Main Navigation Link -->
 
-                <div class="hidden lg:block">
-                    <ul class="leading-8 mx-3 text-violet lg:flex gap-5 xl:gap-10">
+                <div id="mainul" class="hidden lg:block">
+                    <ul class="leading-8 mx-3 text-violet lg:flex gap-5 xl:gap-10 for-underline">
                         <li>
-                            <a class="link-hover" href="#">Home</a>
+                            <a class="text-blue pb-2 lg:border-b-[4px]" href="#">Home</a>
                         </li>
                         <li>
-                            <a class="link-hover" href="#">Doctors</a>
+                            <a class="link-hover " href="#">Doctors</a>
                         </li>
                         <li>
                             <a class="link-hover" href="#">Services</a>
                         </li>
-                        <li class="cursor-pointer link-hover">
+                        <li id="page" class="cursor-pointer link-hover relative">
                             <a class="" href="#">Pages</a>
-                            <span><i class="fa-solid fa-angle-down pl-1"></i></span>
-                            <span class="hidden"><i class="fa-solid fa-angle-up pl-1"></i></span>
-                            <ul class="text-violet ml-5 hidden">
+                            <span id="arowdownpage"><i class="fa-solid fa-angle-down pl-1"></i></span>
+                            <span id="arowuppage" class="hidden"><i class="fa-solid fa-angle-up pl-1"></i></span>
+                            <ul id="subpage" class="text-violet ml-5  lg:ml-0 pl-5 pb-3 hidden lg:absolute top-10 left-[-20px] w-52">
                                 <li><a class="link-hover" href="#">Page - 1</a></li>
                                 <li><a class="link-hover" href="#">Page - 2</a></li>
                                 <li><a class="link-hover" href="#">Page - 3</a></li>
                                 <li><a class="link-hover" href="#">Page - 4</a></li>
                             </ul>
                         </li>
-                        <li class="link-hover">
+                        <li id="blog" class="link-hover cursor-pointer relative">
                             <a href="#">Blogs</a>
-                            <span><i class="fa-solid fa-angle-down pl-1"></i></span>
-                            <span class="hidden"><i class="fa-solid fa-angle-up pl-1"></i></span>
-                            <ul class="text-violet ml-5 hidden">
+                            <span id="arowdownblog"><i class="fa-solid fa-angle-down pl-1"></i></span>
+                            <span id="arowupblog" class="hidden"><i class="fa-solid fa-angle-up pl-1"></i></span>
+                            <ul id="subblog" class="text-violet ml-5 lg:ml-0 pl-5 pb-3  hidden lg:absolute top-10 left-[-20px] w-52">
                                 <li><a class="link-hover" href="#">Blog - 1</a></li>
                                 <li><a class="link-hover" href="#">Blog - 2</a></li>
                                 <li><a class="link-hover" href="#">Blog - 3</a></li>
@@ -95,20 +95,22 @@
 
             <div class="">
                 <div class="lg:hidden">
-                    <div class="block">
+                    <div id="menubar" class="block cursor-pointer">
                         <i class="fa-solid fa-bars text-blue text-3xl font-bold"></i>
                     </div>
-                    <div class="hidden">
+                    <div id="crossbar" class="hidden cursor-pointer">
                         <i class="fa-solid fa-xmark text-blue text-3xl font-bold"></i>
                     </div>
                 </div>
-                <div class="w-44 h-12  flex justify-center items-center text-white font-bold hidden lg:block">
-                    <button class="bg-blue w-full h-full hidden lg:block rounded-md">Book Appointment</button>
+                <div class="w-44 h-12  flex justify-center items-center bg-blue  font-bold rounded-md hidden lg:block relative hover-btn z-10">
+                    <button class=" w-full h-full hidden lg:block rounded-md text-white absolute top-0 left-0 z-50">Book Appointment</button>
                 </div>
 
             </div>
         </nav>
     </header>
+
+
 
     <script src="script.js"></script>
 </body>
