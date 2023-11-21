@@ -53,9 +53,46 @@
     transition: width 0.5s ease;
   }
 
+  .btn2::before{
+    background-color: #1A76D1;
+  }
+
   .hover-btn:hover::before {
     width: 100%;
   }
 
 
- 
+ /* For Background Heroarea Slider */
+
+ .bg-img{
+  @apply bg-cover bg-center h-screen w-[100%]  bg-no-repeat flex-none ;
+ }
+
+ .bg-img-slide{
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
+ }
+
+ .bg-container{
+  @apply ml-5 md:ml-16 lg:ml-20 xl:ml-24 pt-[10%] sm:pt-[15%] md:pt-[15%] lg:pt-[15%] xl:pt-[15%];
+ }
+
+ .bg-headline{
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold text-violet w-[420px] sm:w-[420px] md:w-[500px] lg:w-[650px] xl:w-[700px]; 
+ }
+
+ .bg-para{
+  @apply w-[450px] md:w-[520px]  lg:w-[620px] md:text-lg mt-8 md:mt-10 lg:mt-14;
+ }
+
+ .bg-btn1{
+  @apply w-36 lg:w-44 h-10 lg:h-12  flex justify-center items-center bg-blue  md:font-bold rounded-md  lg:block relative hover-btn z-10;
+ }
+
+ .bg-btn2{
+  @apply w-28 lg:w-36 h-10 lg:h-12  flex justify-center items-center bg-violet  md:font-bold rounded-md  lg:block relative hover-btn btn2 z-10;
+ }
+
+ .angle-btn{
+  @apply w-10 h-10 bg-blue text-white flex justify-center items-center absolute  top-[40%] rounded-[3px] cursor-pointer;
+ }

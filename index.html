@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="bg-red-500">
         <div class="py-5 border-b border-gray md:flex justify-around items-center">
             <ul class="flex justify-center gap-5 lg:gap-10">
                 <li>
@@ -64,18 +64,18 @@
                             <a class="" href="#">Pages</a>
                             <span id="arowdownpage"><i class="fa-solid fa-angle-down pl-1"></i></span>
                             <span id="arowuppage" class="hidden"><i class="fa-solid fa-angle-up pl-1"></i></span>
-                            <ul id="subpage" class="text-violet ml-5  lg:ml-0 pl-5 pb-3 hidden lg:absolute top-10 left-[-20px] w-52">
+                            <ul id="subpage" class="text-violet ml-5  lg:ml-0 pl-5 pb-3 hidden lg:absolute top-10 left-[-20px] w-52 bg-white">
                                 <li><a class="link-hover" href="#">Page - 1</a></li>
                                 <li><a class="link-hover" href="#">Page - 2</a></li>
                                 <li><a class="link-hover" href="#">Page - 3</a></li>
                                 <li><a class="link-hover" href="#">Page - 4</a></li>
                             </ul>
                         </li>
-                        <li id="blog" class="link-hover cursor-pointer relative">
+                        <li id="blog" class="link-hover cursor-pointer relative ">
                             <a href="#">Blogs</a>
                             <span id="arowdownblog"><i class="fa-solid fa-angle-down pl-1"></i></span>
                             <span id="arowupblog" class="hidden"><i class="fa-solid fa-angle-up pl-1"></i></span>
-                            <ul id="subblog" class="text-violet ml-5 lg:ml-0 pl-5 pb-3  hidden lg:absolute top-10 left-[-20px] w-52">
+                            <ul id="subblog" class="text-violet ml-5 lg:ml-0 pl-5 pb-3  hidden lg:absolute top-10 left-[-20px] w-52 bg-white">
                                 <li><a class="link-hover" href="#">Blog - 1</a></li>
                                 <li><a class="link-hover" href="#">Blog - 2</a></li>
                                 <li><a class="link-hover" href="#">Blog - 3</a></li>
@@ -109,6 +109,84 @@
             </div>
         </nav>
     </header>
+
+    <main>
+
+        <!-- Hero area section -->
+        <section>
+            <div id="slide-parent" class="bg-red-900 mt-5 flex overflow-hidden relative">
+                <div id="bgimg1" class="bg-img bg-img-slide" style="background-image: url('img/slider.jpg');">
+                    <div class="bg-container">
+                        <h1 class="bg-headline">We Provide <span class="text-blue">Medical</span> Services That You Can <span class="text-blue">Trust!</span> </h1>
+                        <p class="bg-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, adipisci officiis reiciendis odit voluptatem aspernatur voluptates.</p>
+
+                        <div class="flex mt-8 md:mt-12 lg:mt-14 gap-3">
+                            <div class="bg-btn1">
+                                <button class=" w-full h-full  lg:block rounded-md text-white absolute top-0 left-0 z-50">Get Appointment</button>
+                            </div>
+                            <div class="bg-btn2">
+                                <button class=" w-full h-full  lg:block rounded-md text-white absolute top-0 left-0 z-50">About Us</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="bgimg2" class="bg-img bg-img-slide" style="background-image: url('img/slider2.jpg');">
+                    <div class="bg-container">
+                        <h1 class="bg-headline ">We Provide <span class="text-blue">Medical</span> Services That You Can <span class="text-blue">Trust!</span> </h1>
+                        <p class="bg-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, adipisci officiis reiciendis odit voluptatem aspernatur voluptates.</p>
+
+                        <div class="flex mt-8 md:mt-12 lg:mt-14 gap-3">
+                            <div class="bg-btn1">
+                                <button class=" w-full h-full  lg:block rounded-md text-white absolute top-0 left-0 z-50">Get Appointment</button>
+                            </div>
+                            <div class="bg-btn2">
+                                <button class=" w-full h-full  lg:block rounded-md text-white absolute top-0 left-0 z-50">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="bgimg3" class="bg-img bg-img-slide" style="background-image: url('img/slider3.jpg');">
+                    <div class="bg-container">
+                        <h1 class="bg-headline ">We Provide <span class="text-blue">Medical</span> Services That You Can <span class="text-blue">Trust!</span> </h1>
+                        <p class="bg-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, adipisci officiis reiciendis odit voluptatem aspernatur voluptates.</p>
+
+                        <div class="flex mt-8 md:mt-12 lg:mt-14 gap-3">
+                            <div class="bg-btn1">
+                                <button class=" w-full h-full  lg:block rounded-md text-white absolute top-0 left-0 z-50">Get Appointment</button>
+                            </div>
+                            <div class="bg-btn2">
+                                <button class=" w-full h-full  lg:block rounded-md text-white absolute top-0 left-0 z-50">Contact Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="leftbtn" class="left-1 md:left-3 lg:left-5 angle-btn">
+                    <i class="fa-solid fa-angle-left text-xl font-bold"></i>
+                </div>
+                <div id="rightbtn" class="right-1 md:right-3 lg:right-5 angle-btn">
+                    <i class="fa-solid fa-angle-right text-xl font-bold"></i>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- <div class="flex">
+            <div class="flex-none" style="width: 100%;">First item with full width</div>
+            <div class="flex-none" style="width: 100%;">Second item</div>
+            <div class="flex-none" style="width: 100%;">Third item</div>
+        </div> -->
+
+
+
+
+    </main>
 
 
 

@@ -90,3 +90,46 @@ function updateScreenSize() {
     }
 }
 window.addEventListener('resize', updateScreenSize);
+
+// For reducing image ratio with width
+
+window.addEventListener('resize', () => {
+    let bgimg1 = document.getElementById('bgimg1');
+    let bgimg2 = document.getElementById('bgimg2');
+    let bgimg3 = document.getElementById('bgimg3');
+    let ratio = 1.8;
+    let newWidth = bgimg1.offsetWidth;
+    let newHeight = newWidth / ratio;
+    bgimg1.style.height = newHeight + 'px';
+    bgimg2.style.height = newHeight + 'px';
+    bgimg3.style.height = newHeight + 'px';
+})
+
+
+// For background slide with interval
+
+let slideparent = document.getElementById('slide-parent');
+let leftbtn = document.getElementById('leftbtn');
+let rightbtn = document.getElementById('rightbtn');
+let singlediv = document.querySelectorAll('#slide-parent  .bg-img');
+
+
+
+let index = 0;
+let interval = setInterval(run, 2000)
+
+function run() {
+    index++;
+    changeSlide()
+}
+
+function changeSlide() {
+    if (index > singlediv.length - 1) {
+        index = 0;
+    } else if (index < 0) {
+        index = singlediv.length - 1;
+    }
+    let value = -(index * 100);
+    //console.log(value);
+    slideparent.style.transform = `translateX(${value}%)`;
+}
