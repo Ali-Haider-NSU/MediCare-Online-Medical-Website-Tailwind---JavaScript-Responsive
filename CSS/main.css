@@ -68,13 +68,13 @@
   @apply bg-cover bg-center h-screen w-[100%]  bg-no-repeat flex-none ;
  }
 
- .bg-img-slide{
+ .image-container{
   transform: translateX(0%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
  }
 
  .bg-container{
-  @apply ml-5 md:ml-16 lg:ml-20 xl:ml-24 pt-[10%] sm:pt-[15%] md:pt-[15%] lg:pt-[15%] xl:pt-[15%];
+  @apply ml-5 md:ml-16 lg:ml-20 xl:ml-24 pt-[5%] sm:pt-[10%] md:pt-[10%] lg:pt-[10%] xl:pt-[10%] xxl:pt-[5%];
  }
 
  .bg-headline{
@@ -94,5 +94,16 @@
  }
 
  .angle-btn{
-  @apply w-10 h-10 bg-blue text-white flex justify-center items-center absolute  top-[40%] rounded-[3px] cursor-pointer;
+  @apply w-10 h-10 bg-blue text-white flex justify-center items-center absolute  top-[10%] sm:top-[15%] md:top-[20%] lg:top-[35%] rounded-[3px] cursor-pointer;
+ }
+
+
+ /* Help Section */
+
+ .help-icn{
+  @apply w-20 lg:w-24 h-20 lg:h-24 flex justify-center items-center rounded-full border border-[#DFDFDF] mx-auto  hover:bg-blue text-blue hover:text-white transition;
+ }
+
+ .help-blue-icn{
+  @apply w-20 h-20 border-2 text-2xl text-white flex justify-center items-center rounded-full hover:text-blue hover:bg-white transition;
  }

@@ -116,7 +116,7 @@ let singlediv = document.querySelectorAll('#slide-parent  .bg-img');
 
 
 let index = 0;
-let interval = setInterval(run, 2000)
+let interval = setInterval(run, 2500)
 
 function run() {
     index++;
@@ -130,6 +130,22 @@ function changeSlide() {
         index = singlediv.length - 1;
     }
     let value = -(index * 100);
-    //console.log(value);
     slideparent.style.transform = `translateX(${value}%)`;
 }
+
+function resetInterval() {
+    clearInterval(interval)
+    interval = setInterval(run, 2500)
+}
+
+rightbtn.addEventListener('click', () => {
+    index++;
+    changeSlide()
+    resetInterval()
+})
+
+leftbtn.addEventListener('click', () => {
+    index--;
+    changeSlide()
+    resetInterval()
+})
