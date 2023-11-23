@@ -56,6 +56,9 @@
   .btn2::before{
     background-color: #1A76D1;
   }
+  .btn5::before{
+    background-color: #2C2D3F;
+  }
 
   .hover-btn:hover::before {
     width: 100%;
@@ -91,6 +94,19 @@
 
  .bg-btn2{
   @apply w-28 lg:w-36 h-10 lg:h-12  flex justify-center items-center bg-violet  md:font-bold rounded-md  lg:block relative hover-btn btn2 z-10;
+ }
+
+ .bg-btn3{
+  @apply w-32 lg:w-36 h-10 lg:h-12  flex justify-center items-center text-blue bg-white
+  hover:text-white  md:font-bold rounded-md  hover-btn btn2 z-10;
+ }
+
+ .bg-btn4{
+  @apply w-36 lg:w-36 h-10 lg:h-12  flex justify-center items-center bg-blue hover:bg-white md:font-bold rounded-md  lg:block relative transition hover:text-blue z-10;
+ }
+
+ .bg-btn5{
+  @apply w-36 lg:w-36 h-12 lg:h-12  flex justify-center items-center bg-white text-blue hover:text-white md:font-bold rounded-md  hover-btn  z-10;
  }
 
  .angle-btn{
