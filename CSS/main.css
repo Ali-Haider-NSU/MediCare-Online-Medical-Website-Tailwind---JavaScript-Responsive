@@ -109,6 +109,10 @@
   @apply w-36 lg:w-36 h-12 lg:h-12  flex justify-center items-center bg-white text-blue hover:text-white md:font-bold rounded-md  hover-btn  z-10;
  }
 
+ .bg-btn6{
+  @apply   flex justify-center items-center bg-blue  md:font-bold rounded-md  lg:block relative hover-btn z-10;
+ }
+
  .angle-btn{
   @apply w-10 h-10 bg-blue text-white flex justify-center items-center absolute  top-[10%] sm:top-[15%] md:top-[20%] lg:top-[35%] rounded-[3px] cursor-pointer;
  }
@@ -123,3 +127,30 @@
  .help-blue-icn{
   @apply w-20 h-20 border-2 text-2xl text-white flex justify-center items-center rounded-full hover:text-blue hover:bg-white transition;
  }
+
+/* Rules Section */
+
+ .infin{
+  animation: slide 16s infinite;
+ }
+
+ @keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-400%);
+  }
+ }
+
+
+ 
