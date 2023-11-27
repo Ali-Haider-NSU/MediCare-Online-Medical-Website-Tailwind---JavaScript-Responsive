@@ -149,3 +149,51 @@ leftbtn.addEventListener('click', () => {
     changeSlide()
     resetInterval()
 })
+
+
+// Appointment Booking Form Section
+
+let dept1 = document.getElementById('dept');
+let dept2 = document.getElementsByClassName('dept');
+let deptul = document.getElementById('dept-ul');
+let deptup = document.getElementById('dept-up');
+let deptdown = document.getElementById('dept-down');
+let deptparent = document.getElementById('dept-parent');
+
+deptdown.addEventListener('click', () => {
+    deptul.style.display = 'block';
+    deptdown.style.color = '#ffffff'
+    deptup.style.color = '#757575'
+    deptup.style.marginLeft = '-20px'
+    deptparent.style.height = 'auto'
+})
+deptup.addEventListener('click', () => {
+    deptul.style.display = 'none';
+    deptup.style.color = '#ffffff'
+    deptdown.style.color = '#757575'
+    deptup.style.marginLeft = '20px'
+    deptparent.style.height = '48px'
+
+})
+
+let doctor1 = document.getElementById('doctor');
+let doctor2 = document.getElementsByClassName('doctor');
+let doctorul = document.getElementById('doctor-ul');
+let doctorup = document.getElementById('doctor-up');
+let doctordown = document.getElementById('doctor-down');
+let doctorparent = document.getElementById('doctor-parent');
+
+doctordown.addEventListener('click', () => {
+    doctorul.style.display = 'block';
+    doctordown.style.color = '#ffffff'
+    doctorup.style.color = '#757575'
+    doctorup.style.marginLeft = '-20px'
+    doctorparent.style.height = 'auto'
+})
+doctorup.addEventListener('click', () => {
+    doctorul.style.display = 'none';
+    doctorup.style.color = '#ffffff'
+    doctordown.style.color = '#757575'
+    doctorup.style.marginLeft = '20px'
+    doctorparent.style.height = '48px'
+})
